@@ -7,7 +7,7 @@ try:
 except ImportError:  # Django < 1.4
     from django.conf.urls.defaults import patterns, url
 from django.contrib import admin
-try 
+try:
     from django.contrib.admin.util import unquote
 except:
     from django.contrib.admin.utils import unquote
